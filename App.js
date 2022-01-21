@@ -1,11 +1,28 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TextInput} from 'react-native';
 
 const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.nav}>
-        <Text style={styles.text}>Clone Gojek App!</Text>
+        <View style={styles.wrapperBar}>
+          <View style={styles.wrapperInputSearch}>
+            <TextInput
+              placeholder="What do you want to me"
+              style={styles.inputSearch}
+            />
+            <Image
+              source={require('./icons/search.png')}
+              style={styles.iconSearch}
+            />
+          </View>
+          <View style={styles.wrapperIconPromo}>
+            <Image
+              source={require('./icons/promo.png')}
+              style={styles.iconPromo}
+            />
+          </View>
+        </View>
       </View>
       <View style={styles.bottomNav}>
         <View style={styles.colorOne}>
@@ -66,7 +83,7 @@ const styles = StyleSheet.create({
   },
   nav: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: 'white',
   },
   icons: {
     height: 26,
@@ -81,6 +98,43 @@ const styles = StyleSheet.create({
     width: 26,
     height: 26,
     backgroundColor: 'white',
+  },
+  wrapperBar: {
+    paddingTop: 15,
+    marginHorizontal: 17,
+    flexDirection: 'row',
+  },
+  iconSearch: {
+    width: 27,
+    height: 27,
+    position: 'absolute',
+    top: 7,
+    left: 12,
+    backgroundColor: 'white',
+  },
+  wrapperIconPromo: {
+    width: 35,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  iconPromo: {
+    width: 34,
+    height: 34,
+  },
+  wrapperInputSearch: {
+    position: 'relative',
+    flex: 1,
+  },
+  inputSearch: {
+    borderWidth: 1,
+    borderColor: '#E8E8E8',
+    borderRadius: 25,
+    height: 40,
+    fontSize: 13,
+    paddingLeft: 55,
+    paddingRight: 20,
+    backgroundColor: 'white',
+    marginRight: 15,
   },
   colorOne: {
     flex: 1,
