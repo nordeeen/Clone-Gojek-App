@@ -5,7 +5,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.nav}>
-        {/* Search Bar*/}
+        {/* SEARCH BAR */}
         <View style={styles.wrapperBar}>
           <View style={styles.wrapperInputSearch}>
             <TextInput
@@ -24,7 +24,7 @@ const App = () => {
             />
           </View>
         </View>
-        {/* Gopay */}
+        {/* GOPAY */}
         <View style={styles.wrapperFirstSectionGopay}>
           <View style={styles.wrapperSectionGopay}>
             <Image
@@ -61,6 +61,85 @@ const App = () => {
                 style={styles.iconPictureGopay}
               />
               <Text style={styles.textSecGopay}>More</Text>
+            </View>
+          </View>
+        </View>
+        {/* MAIN FEATURE */}
+        <View style={styles.wrapperMainFeature}>
+          <View style={styles.wrapperFirstMain}>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-ride.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>go-ride</Text>
+            </View>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-car.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>go-car</Text>
+            </View>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-bluebird.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>go-bluebird</Text>
+            </View>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-send.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>go-send</Text>
+            </View>
+          </View>
+          <View style={styles.wrapperSecondMain}>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-deal.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>go-deals</Text>
+            </View>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-pulsa.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>go-pulsa</Text>
+            </View>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-food.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>go-food</Text>
+            </View>
+            <View style={styles.wrapperBoxMainFeature}>
+              <View style={styles.boxMainFeature}>
+                <Image
+                  source={require('./icons/go-more.png')}
+                  style={styles.logoPicMain}
+                />
+              </View>
+              <Text style={styles.fontBox}>more</Text>
             </View>
           </View>
         </View>
@@ -116,7 +195,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
   },
-  // Style Search Bar
+  // STYLE SEARCH BAR
   wrapperBar: {
     paddingTop: 15,
     marginHorizontal: 17,
@@ -145,8 +224,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     marginRight: 15,
   },
-  // Style Promo section
-  // commit revisi styling search and promo
+  // STYLE PROMO SECTION
   wrapperIconPromo: {
     width: 35,
     alignItems: 'center',
@@ -156,8 +234,7 @@ const styles = StyleSheet.create({
     width: 42,
     height: 34,
   },
-  // Style Gopay Section
-  // commit adding gopay feature section
+  // STYLE GOPAY SECTION
   wrapperFirstSectionGopay: {
     marginHorizontal: 17,
     marginTop: 8,
@@ -213,8 +290,49 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
-  // Style Bottom Nav
-  // commit revisi styling bottom nav
+  // STYLE MAIN FEATURE
+  wrapperMainFeature: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginTop: 18,
+  },
+  logoPicMain: {
+    width: 46,
+    height: 46,
+  },
+  fontBox: {
+    fontSize: 11,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 6,
+    textTransform: 'uppercase',
+  },
+  wrapperFirstMain: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    width: '100%',
+    marginBottom: 18,
+  },
+  wrapperSecondMain: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    width: '100%',
+  },
+  wrapperBoxMainFeature: {
+    width: '25%',
+    alignItems: 'center',
+  },
+  boxMainFeature: {
+    width: 58,
+    height: 58,
+    borderWidth: 1,
+    borderRadius: 18,
+    borderColor: '#EFEFEF',
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  // STYLE BOTTOM NAV
   bottomNav: {
     height: 54,
     flexDirection: 'row',
