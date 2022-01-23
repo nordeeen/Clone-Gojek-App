@@ -143,6 +143,8 @@ const App = () => {
             </View>
           </View>
         </View>
+        <View style={styles.lines} />
+        {/*NEWS SECTION */}
       </View>
       <View style={styles.bottomNav}>
         <View style={styles.iconOne}>
@@ -306,6 +308,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 6,
     textTransform: 'uppercase',
+  },
+  lines: {
+    height: 17,
+    backgroundColor: '#F2F2F4',
+    marginTop: 20,
   },
   wrapperFirstMain: {
     justifyContent: 'space-between',
