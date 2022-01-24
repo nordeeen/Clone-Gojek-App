@@ -1,151 +1,185 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image, TextInput} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TextInput,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.nav}>
-        {/* SEARCH BAR */}
-        <View style={styles.wrapperBar}>
-          <View style={styles.wrapperInputSearch}>
-            <TextInput
-              placeholder="What do you want to me"
-              style={styles.inputSearch}
-            />
-            <Image
-              source={require('./icons/search.png')}
-              style={styles.iconSearch}
-            />
+      <ScrollView automaticallyAdjustsScrollIndicatorInsets={false}>
+        <View style={styles.nav}>
+          {/* SEARCH BAR */}
+          <View style={styles.wrapperBar}>
+            <View style={styles.wrapperInputSearch}>
+              <TextInput
+                placeholder="What do you want to me"
+                style={styles.inputSearch}
+              />
+              <Image
+                source={require('./icons/search.png')}
+                style={styles.iconSearch}
+              />
+            </View>
+            <View style={styles.wrapperIconPromo}>
+              <Image
+                source={require('./icons/promo.png')}
+                style={styles.iconPromo}
+              />
+            </View>
           </View>
-          <View style={styles.wrapperIconPromo}>
-            <Image
-              source={require('./icons/promo.png')}
-              style={styles.iconPromo}
-            />
+          {/* GOPAY */}
+          <View style={styles.wrapperFirstSectionGopay}>
+            <View style={styles.wrapperSectionGopay}>
+              <Image
+                source={require('./icons/gopay.png')}
+                style={styles.iconGopay}
+              />
+              <Text style={styles.textGopay}>Rp 50.0000</Text>
+            </View>
+            <View style={styles.wrapperSecondSectionGopay}>
+              <View style={styles.iconSecGopayOne}>
+                <Image
+                  source={require('./icons/pay.png')}
+                  style={styles.iconPictureGopay}
+                />
+                <Text style={styles.textSecGopay}>Pay</Text>
+              </View>
+              <View style={styles.iconSecGopayTwo}>
+                <Image
+                  source={require('./icons/nearby.png')}
+                  style={styles.iconPictureGopay}
+                />
+                <Text style={styles.textSecGopay}>Nearby</Text>
+              </View>
+              <View style={styles.iconSecGopayThree}>
+                <Image
+                  source={require('./icons/top-up.png')}
+                  style={styles.iconPictureGopay}
+                />
+                <Text style={styles.textSecGopay}>Top Up</Text>
+              </View>
+              <View style={styles.iconSecGopayFour}>
+                <Image
+                  source={require('./icons/more.png')}
+                  style={styles.iconPictureGopay}
+                />
+                <Text style={styles.textSecGopay}>More</Text>
+              </View>
+            </View>
+          </View>
+          {/* MAIN FEATURE */}
+          <View style={styles.wrapperMainFeature}>
+            <View style={styles.wrapperFirstMain}>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-ride.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>go-ride</Text>
+              </View>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-car.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>go-car</Text>
+              </View>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-bluebird.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>go-bluebird</Text>
+              </View>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-send.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>go-send</Text>
+              </View>
+            </View>
+            <View style={styles.wrapperSecondMain}>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-deal.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>go-deals</Text>
+              </View>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-pulsa.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>go-pulsa</Text>
+              </View>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-food.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>go-food</Text>
+              </View>
+              <View style={styles.wrapperBoxMainFeature}>
+                <View style={styles.boxMainFeature}>
+                  <Image
+                    source={require('./icons/go-more.png')}
+                    style={styles.logoPicMain}
+                  />
+                </View>
+                <Text style={styles.fontBox}>more</Text>
+              </View>
+            </View>
+          </View>
+          <View style={styles.lines} />
+          {/*NEWS SECTION */}
+          <View style={styles.wrapperFirstNewsSec}>
+            <View style={styles.wrapperImageNews}>
+              <Image
+                source={require('./dummy/go-news-football.jpg')}
+                style={styles.ImageNewsSec}
+              />
+              <View style={styles.bgTransparent} />
+              <Image
+                source={require('./logo/logo-gojek-transparent.png')}
+                style={styles.logoGojek}
+              />
+            </View>
+            <View style={styles.wrapperTextNews}>
+              <Text style={styles.textNewsSec}>go-news timnas</Text>
+              <Text style={styles.textDescNews}>
+                Daftar Midfilder Timnas Indonesia di AFF CUP 2020
+              </Text>
+              <TouchableOpacity>
+                <View style={styles.btnNews}>
+                  <Text style={styles.btnText}>read</Text>
+                </View>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
-        {/* GOPAY */}
-        <View style={styles.wrapperFirstSectionGopay}>
-          <View style={styles.wrapperSectionGopay}>
-            <Image
-              source={require('./icons/gopay.png')}
-              style={styles.iconGopay}
-            />
-            <Text style={styles.textGopay}>Rp 50.0000</Text>
-          </View>
-          <View style={styles.wrapperSecondSectionGopay}>
-            <View style={styles.iconSecGopayOne}>
-              <Image
-                source={require('./icons/pay.png')}
-                style={styles.iconPictureGopay}
-              />
-              <Text style={styles.textSecGopay}>Pay</Text>
-            </View>
-            <View style={styles.iconSecGopayTwo}>
-              <Image
-                source={require('./icons/nearby.png')}
-                style={styles.iconPictureGopay}
-              />
-              <Text style={styles.textSecGopay}>Nearby</Text>
-            </View>
-            <View style={styles.iconSecGopayThree}>
-              <Image
-                source={require('./icons/top-up.png')}
-                style={styles.iconPictureGopay}
-              />
-              <Text style={styles.textSecGopay}>Top Up</Text>
-            </View>
-            <View style={styles.iconSecGopayFour}>
-              <Image
-                source={require('./icons/more.png')}
-                style={styles.iconPictureGopay}
-              />
-              <Text style={styles.textSecGopay}>More</Text>
-            </View>
-          </View>
-        </View>
-        {/* MAIN FEATURE */}
-        <View style={styles.wrapperMainFeature}>
-          <View style={styles.wrapperFirstMain}>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-ride.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>go-ride</Text>
-            </View>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-car.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>go-car</Text>
-            </View>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-bluebird.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>go-bluebird</Text>
-            </View>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-send.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>go-send</Text>
-            </View>
-          </View>
-          <View style={styles.wrapperSecondMain}>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-deal.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>go-deals</Text>
-            </View>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-pulsa.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>go-pulsa</Text>
-            </View>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-food.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>go-food</Text>
-            </View>
-            <View style={styles.wrapperBoxMainFeature}>
-              <View style={styles.boxMainFeature}>
-                <Image
-                  source={require('./icons/go-more.png')}
-                  style={styles.logoPicMain}
-                />
-              </View>
-              <Text style={styles.fontBox}>more</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.lines} />
-        {/*NEWS SECTION */}
-      </View>
+      </ScrollView>
       <View style={styles.bottomNav}>
         <View style={styles.iconOne}>
           <Image
@@ -338,6 +372,71 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  // NEWS SECTION
+  wrapperFirstNewsSec: {
+    paddingTop: 16,
+    paddingHorizontal: 16,
+    // backgroundColor: 'pink',
+  },
+  ImageNewsSec: {
+    height: 170,
+    width: '100%',
+    borderRadius: 6,
+  },
+  wrapperTextNews: {
+    paddingTop: 16,
+    paddingBottom: 20,
+    borderBottomColor: '#E8E9ED',
+    borderBottomWidth: 1,
+    marginBottom: 20,
+  },
+  textNewsSec: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    color: 'black',
+    marginBottom: 4,
+  },
+  textDescNews: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#7A7A7A',
+    marginBottom: 11,
+  },
+  wrapperImageNews: {
+    position: 'relative',
+  },
+  bgTransparent: {
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    backgroundColor: 'black',
+    opacity: 0.2,
+    top: 0,
+    left: 0,
+    borderRadius: 6,
+  },
+  logoGojek: {
+    height: 15,
+    width: 55,
+    position: 'absolute',
+    top: 16,
+    left: 16,
+  },
+  btnNews: {
+    backgroundColor: '#61A756',
+    alignSelf: 'flex-end',
+    paddingHorizontal: 12,
+    paddingVertical: 11,
+    borderRadius: 4,
+  },
+  btnText: {
+    fontSize: 13,
+    textTransform: 'uppercase',
+    color: 'white',
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
   // STYLE BOTTOM NAV
   bottomNav: {
