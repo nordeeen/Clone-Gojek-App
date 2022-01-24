@@ -178,6 +178,38 @@ const App = () => {
               </TouchableOpacity>
             </View>
           </View>
+          {/*GOFOOD BANNER SECTION*/}
+          <View style={styles.wrapperGofoodSec}>
+            <View style={styles.wrapperSection}>
+              <Image
+                source={require('./dummy/banner-food.jpg')}
+                style={styles.ImageNewsSec}
+              />
+              <View style={styles.bgTransparent} />
+              <Image
+                source={require('./logo/logo-gofood.png')}
+                style={styles.logoGojek}
+              />
+              <View style={styles.wrapperDesc}>
+                <View>
+                  <Text style={styles.textBannerFood}>
+                    Free GO-FOOD voucher
+                  </Text>
+                  <Text style={styles.textDescFood}>
+                    Quick, before they run out!
+                  </Text>
+                </View>
+                <View style={styles.wrapperBtnVoucher}>
+                  <TouchableOpacity>
+                    <View style={styles.btnVoucher}>
+                      <Text style={styles.btnVoucherText}>get voucher</Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+            <View style={styles.linesBottom} />
+          </View>
         </View>
       </ScrollView>
       <View style={styles.bottomNav}>
@@ -377,7 +409,6 @@ const styles = StyleSheet.create({
   wrapperFirstNewsSec: {
     paddingTop: 16,
     paddingHorizontal: 16,
-    // backgroundColor: 'pink',
   },
   ImageNewsSec: {
     height: 170,
@@ -419,7 +450,7 @@ const styles = StyleSheet.create({
   },
   logoGojek: {
     height: 15,
-    width: 55,
+    width: 74,
     position: 'absolute',
     top: 16,
     left: 16,
@@ -437,6 +468,58 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     fontWeight: 'bold',
+  },
+  // STYLE GOFOOD BANNER SECTION
+  wrapperGofoodSec: {
+    padding: 16,
+  },
+  wrapperSection: {
+    position: 'relative',
+  },
+  wrapperDesc: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingBottom: 16,
+  },
+  textBannerFood: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'white',
+    marginBottom: 8,
+  },
+  textDescFood: {
+    fontSize: 12,
+    fontWeight: '500',
+    color: 'white',
+  },
+  wrapperBtnVoucher: {
+    flex: 1,
+    paddingLeft: 16,
+  },
+  btnVoucher: {
+    backgroundColor: '#61A756',
+    alignSelf: 'stretch',
+    paddingHorizontal: 12,
+    paddingVertical: 11,
+    borderRadius: 4,
+  },
+  btnVoucherText: {
+    fontSize: 10,
+    textTransform: 'uppercase',
+    color: 'white',
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  linesBottom: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#E8E9ED',
+    marginBottom: 20,
+    marginTop: 16,
   },
   // STYLE BOTTOM NAV
   bottomNav: {
