@@ -167,9 +167,9 @@ const App = () => {
               />
             </View>
             <View style={styles.wrapperTextNews}>
-              <Text style={styles.textNewsSec}>go-news timnas</Text>
+              <Text style={styles.textNewsSec}>go-news</Text>
               <Text style={styles.textDescNews}>
-                Daftar Midfilder Timnas Indonesia di AFF CUP 2020
+                Gelandang Timnas Indonesia di era Shin Tae Yong
               </Text>
               <TouchableOpacity>
                 <View style={styles.btnNews}>
