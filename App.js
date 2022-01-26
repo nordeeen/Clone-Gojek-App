@@ -178,6 +178,36 @@ const App = () => {
               </TouchableOpacity>
             </View>
           </View>
+          {/*INTERNAL INFORMATION SECTION*/}
+          <View style={styles.wrapperFirstInternalSec}>
+            <View style={styles.wrapperImageInternSec}>
+              <Image
+                source={require('./logo/logos-gojek.png')}
+                style={styles.logoGojekInternalSec}
+              />
+            </View>
+            <Text style={styles.textInternSec}>Connect with Facebook</Text>
+            <View style={styles.wrapperFacebookIntern}>
+              <View>
+                <Image
+                  style={styles.imageFacebookIntern}
+                  source={require('./dummy/facebook-connect.png')}
+                />
+              </View>
+              <View style={styles.wrapperText}>
+                <Text style={styles.firstText}>Connect with Facebook</Text>
+                <Text style={styles.secondText}>
+                  Log in faster without verification code
+                </Text>
+              </View>
+            </View>
+            <TouchableOpacity>
+              <View style={styles.btnNews}>
+                <Text style={styles.btnText}>connect</Text>
+              </View>
+            </TouchableOpacity>
+            <View style={styles.lineBottomIntern} />
+          </View>
           {/*GOFOOD BANNER SECTION*/}
           <View style={styles.wrapperGofoodSec}>
             <View style={styles.wrapperSection}>
@@ -468,6 +498,55 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     fontWeight: 'bold',
+  },
+  // STYLE INTERNAL INFORMATION SECTION
+  wrapperFirstInternalSec: {
+    padding: 16,
+    paddingBottom: 0,
+  },
+  wrapperImageInternSec: {
+    height: 15,
+    width: 60,
+    marginLeft: -4,
+  },
+  logoGojekInternalSec: {
+    height: 30,
+    width: 80,
+  },
+  imageFacebookIntern: {
+    width: 75,
+    height: 45,
+  },
+  wrapperFacebookIntern: {
+    flexDirection: 'row',
+    marginBottom: 16,
+  },
+  textInternSec: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    color: '#1C1C1C',
+    marginTop: 18,
+    marginBottom: 20,
+  },
+  wrapperText: {
+    marginLeft: 18,
+    flex: 1,
+  },
+  firstText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#4A4A4A',
+  },
+  secondText: {
+    fontSize: 15,
+    fontWeight: 'normal',
+    color: '#4A4A4A',
+    width: '70%',
+  },
+  lineBottomIntern: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#E8E9ED',
+    marginTop: 16,
   },
   // STYLE GOFOOD BANNER SECTION
   wrapperGofoodSec: {
