@@ -240,7 +240,77 @@ const App = () => {
             </View>
             <View style={styles.linesBottom} />
           </View>
+          {/*NEARBY GO-FOOD */}
+          <View>
+            <View style={styles.wrapperLogoFood}>
+              <Image
+                source={require('./logo/logo-gofood.png')}
+                style={styles.logoFood}
+              />
+            </View>
+            <View style={styles.wrapperTextFood}>
+              <Text style={styles.textNearby}>Nearby Restaurant</Text>
+              <Text style={styles.textDescAll}>See All</Text>
+            </View>
+            <ScrollView horizontal style={styles.wrapperFoodSection}>
+              <View>
+                <View style={styles.wrapperImageFood}>
+                  <Image
+                    source={require('./dummy/nasi-kebuli.jpg')}
+                    style={styles.imageFood}
+                  />
+                </View>
+                <Text style={styles.textFoodSection}>Nasi Kebuli Priuk</Text>
+              </View>
+              <View>
+                <View style={styles.wrapperImageFood}>
+                  <Image
+                    source={require('./dummy/mie-ayam-bakso.jpg')}
+                    style={styles.imageFood}
+                  />
+                </View>
+                <Text style={styles.textFoodSection}>Mie Ayam Bakso</Text>
+              </View>
+              <View>
+                <View style={styles.wrapperImageFood}>
+                  <Image
+                    source={require('./dummy/soto-betawi.jpg')}
+                    style={styles.imageFood}
+                  />
+                </View>
+                <Text style={styles.textFoodSection}>Soto Betawi</Text>
+              </View>
+              <View>
+                <View style={styles.wrapperImageFood}>
+                  <Image
+                    source={require('./dummy/martabak-telor.jpg')}
+                    style={styles.imageFood}
+                  />
+                </View>
+                <Text style={styles.textFoodSection}>Martabak Telor</Text>
+              </View>
+              <View>
+                <View style={styles.wrapperImageFood}>
+                  <Image
+                    source={require('./dummy/rujak-cingur.jpg')}
+                    style={styles.imageFood}
+                  />
+                </View>
+                <Text style={styles.textFoodSection}>Rujak Cingur</Text>
+              </View>
+              <View>
+                <View style={styles.wrapperImageFood}>
+                  <Image
+                    source={require('./dummy/pecel-lele.jpg')}
+                    style={styles.imageFood}
+                  />
+                </View>
+                <Text style={styles.textFoodSection}>Pecel Lele</Text>
+              </View>
+            </ScrollView>
+          </View>
         </View>
+        <View style={styles.lineBottomFood} />
       </ScrollView>
       <View style={styles.bottomNav}>
         <View style={styles.iconOne}>
@@ -599,6 +669,65 @@ const styles = StyleSheet.create({
     borderBottomColor: '#E8E9ED',
     marginBottom: 20,
     marginTop: 16,
+  },
+  // STYLE NEARBY GO-FOOD
+  wrapperLogoFood: {
+    height: 30,
+    width: 75,
+    marginLeft: 16,
+  },
+  logoFood: {
+    height: undefined,
+    width: undefined,
+    resizeMode: 'contain',
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  wrapperTextFood: {
+    marginBottom: 16,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+  },
+  textNearby: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    color: '#1C1C1C',
+  },
+  textDescAll: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    color: '#61A756',
+  },
+  wrapperFoodSection: {
+    flexDirection: 'row',
+    paddingLeft: 16,
+  },
+  wrapperImageFood: {
+    height: 150,
+    width: 150,
+  },
+  imageFood: {
+    height: undefined,
+    width: undefined,
+    resizeMode: 'cover',
+    flex: 1,
+    borderRadius: 10,
+    marginRight: 16,
+  },
+  textFoodSection: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#1C1C1C',
+    marginTop: 12,
+    textAlign: 'center',
+  },
+  lineBottomFood: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#E8E9ED',
+    marginHorizontal: 16,
+    marginTop: 18,
+    marginBottom: 20,
   },
   // STYLE BOTTOM NAV
   bottomNav: {
