@@ -22,13 +22,13 @@ const App = () => {
                 style={styles.inputSearch}
               />
               <Image
-                source={require('./icons/search.png')}
+                source={require('./src/assets/icons/search.png')}
                 style={styles.iconSearch}
               />
             </View>
             <View style={styles.wrapperIconPromo}>
               <Image
-                source={require('./icons/promo.png')}
+                source={require('./src/assets/icons/promo.png')}
                 style={styles.iconPromo}
               />
             </View>
@@ -37,7 +37,7 @@ const App = () => {
           <View style={styles.wrapperFirstSectionGopay}>
             <View style={styles.wrapperSectionGopay}>
               <Image
-                source={require('./icons/gopay.png')}
+                source={require('./src/assets/icons/gopay.png')}
                 style={styles.iconGopay}
               />
               <Text style={styles.textGopay}>Rp 50.0000</Text>
@@ -45,28 +45,28 @@ const App = () => {
             <View style={styles.wrapperSecondSectionGopay}>
               <View style={styles.iconSecGopayOne}>
                 <Image
-                  source={require('./icons/pay.png')}
+                  source={require('./src/assets/icons/pay.png')}
                   style={styles.iconPictureGopay}
                 />
                 <Text style={styles.textSecGopay}>Pay</Text>
               </View>
               <View style={styles.iconSecGopayTwo}>
                 <Image
-                  source={require('./icons/nearby.png')}
+                  source={require('./src/assets/icons/nearby.png')}
                   style={styles.iconPictureGopay}
                 />
                 <Text style={styles.textSecGopay}>Nearby</Text>
               </View>
               <View style={styles.iconSecGopayThree}>
                 <Image
-                  source={require('./icons/top-up.png')}
+                  source={require('./src/assets/icons/top-up.png')}
                   style={styles.iconPictureGopay}
                 />
                 <Text style={styles.textSecGopay}>Top Up</Text>
               </View>
               <View style={styles.iconSecGopayFour}>
                 <Image
-                  source={require('./icons/more.png')}
+                  source={require('./src/assets/icons/more.png')}
                   style={styles.iconPictureGopay}
                 />
                 <Text style={styles.textSecGopay}>More</Text>
@@ -79,7 +79,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-ride.png')}
+                    source={require('./src/assets/icons/go-ride.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -88,7 +88,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-car.png')}
+                    source={require('./src/assets/icons/go-car.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -97,7 +97,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-bluebird.png')}
+                    source={require('./src/assets/icons/go-bluebird.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -106,7 +106,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-send.png')}
+                    source={require('./src/assets/icons/go-send.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -117,7 +117,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-deal.png')}
+                    source={require('./src/assets/icons/go-deal.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -126,7 +126,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-pulsa.png')}
+                    source={require('./src/assets/icons/go-pulsa.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -135,7 +135,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-food.png')}
+                    source={require('./src/assets/icons/go-food.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -144,7 +144,7 @@ const App = () => {
               <View style={styles.wrapperBoxMainFeature}>
                 <View style={styles.boxMainFeature}>
                   <Image
-                    source={require('./icons/go-more.png')}
+                    source={require('./src/assets/icons/go-more.png')}
                     style={styles.logoPicMain}
                   />
                 </View>
@@ -157,12 +157,12 @@ const App = () => {
           <View style={styles.wrapperFirstNewsSec}>
             <View style={styles.wrapperImageNews}>
               <Image
-                source={require('./dummy/go-news-football.jpg')}
+                source={require('./src/assets/dummy/go-news-football.jpg')}
                 style={styles.ImageNewsSec}
               />
               <View style={styles.bgTransparent} />
               <Image
-                source={require('./logo/logo-gojek-transparent.png')}
+                source={require('./src/assets/logo/logo-gojek-transparent.png')}
                 style={styles.logoGojek}
               />
             </View>
@@ -182,7 +182,7 @@ const App = () => {
           <View style={styles.wrapperFirstInternalSec}>
             <View style={styles.wrapperImageInternSec}>
               <Image
-                source={require('./logo/logos-gojek.png')}
+                source={require('./src/assets/logo/logos-gojek.png')}
                 style={styles.logoGojekInternalSec}
               />
             </View>
@@ -191,7 +191,7 @@ const App = () => {
               <View>
                 <Image
                   style={styles.imageFacebookIntern}
-                  source={require('./dummy/facebook-connect.png')}
+                  source={require('./src/assets/dummy/facebook-connect.png')}
                 />
               </View>
               <View style={styles.wrapperText}>
@@ -212,12 +212,12 @@ const App = () => {
           <View style={styles.wrapperGofoodSec}>
             <View style={styles.wrapperSection}>
               <Image
-                source={require('./dummy/banner-food.jpg')}
+                source={require('./src/assets/dummy/banner-food.jpg')}
                 style={styles.ImageNewsSec}
               />
               <View style={styles.bgTransparent} />
               <Image
-                source={require('./logo/logo-gofood.png')}
+                source={require('./src/assets/logo/logo-gofood.png')}
                 style={styles.logoGojek}
               />
               <View style={styles.wrapperDesc}>
@@ -244,7 +244,7 @@ const App = () => {
           <View>
             <View style={styles.wrapperLogoFood}>
               <Image
-                source={require('./logo/logo-gofood.png')}
+                source={require('./src/assets/logo/logo-gofood.png')}
                 style={styles.logoFood}
               />
             </View>
@@ -256,7 +256,7 @@ const App = () => {
               <View>
                 <View style={styles.wrapperImageFood}>
                   <Image
-                    source={require('./dummy/nasi-kebuli.jpg')}
+                    source={require('./src/assets/dummy/nasi-kebuli.jpg')}
                     style={styles.imageFood}
                   />
                 </View>
@@ -265,7 +265,7 @@ const App = () => {
               <View>
                 <View style={styles.wrapperImageFood}>
                   <Image
-                    source={require('./dummy/mie-ayam-bakso.jpg')}
+                    source={require('./src/assets/dummy/mie-ayam-bakso.jpg')}
                     style={styles.imageFood}
                   />
                 </View>
@@ -274,7 +274,7 @@ const App = () => {
               <View>
                 <View style={styles.wrapperImageFood}>
                   <Image
-                    source={require('./dummy/soto-betawi.jpg')}
+                    source={require('./src/assets/dummy/soto-betawi.jpg')}
                     style={styles.imageFood}
                   />
                 </View>
@@ -283,7 +283,7 @@ const App = () => {
               <View>
                 <View style={styles.wrapperImageFood}>
                   <Image
-                    source={require('./dummy/martabak-telor.jpg')}
+                    source={require('./src/assets/dummy/martabak-telor.jpg')}
                     style={styles.imageFood}
                   />
                 </View>
@@ -292,7 +292,7 @@ const App = () => {
               <View>
                 <View style={styles.wrapperImageFood}>
                   <Image
-                    source={require('./dummy/rujak-cingur.jpg')}
+                    source={require('./src/assets/dummy/rujak-cingur.jpg')}
                     style={styles.imageFood}
                   />
                 </View>
@@ -301,7 +301,7 @@ const App = () => {
               <View>
                 <View style={styles.wrapperImageFood}>
                   <Image
-                    source={require('./dummy/pecel-lele.jpg')}
+                    source={require('./src/assets/dummy/pecel-lele.jpg')}
                     style={styles.imageFood}
                   />
                 </View>
@@ -315,35 +315,35 @@ const App = () => {
       <View style={styles.bottomNav}>
         <View style={styles.iconOne}>
           <Image
-            source={require('./icons/home-active.png')}
+            source={require('./src/assets/icons/home-active.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Home</Text>
         </View>
         <View style={styles.iconTwo}>
           <Image
-            source={require('./icons/order-active.png')}
+            source={require('./src/assets/icons/order.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Orders</Text>
         </View>
         <View style={styles.iconThree}>
           <Image
-            source={require('./icons/help-active.png')}
+            source={require('./src/assets/icons/help.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Help</Text>
         </View>
         <View style={styles.iconFour}>
           <Image
-            source={require('./icons/inbox-active.png')}
+            source={require('./src/assets/icons/inbox.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Inbox</Text>
         </View>
         <View style={styles.iconFive}>
           <Image
-            source={require('./icons/account-active.png')}
+            source={require('./src/assets/icons/account.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Account</Text>
