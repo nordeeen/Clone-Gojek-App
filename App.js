@@ -9,6 +9,15 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+const GopayFeature = props => {
+  return (
+    <View style={styles.iconSecGopayOne}>
+      <Image source={props.image} style={styles.iconPictureGopay} />
+      <Text style={styles.textSecGopay}>{props.title}</Text>
+    </View>
+  );
+};
+
 const App = () => {
   return (
     <View style={styles.container}>
@@ -43,34 +52,22 @@ const App = () => {
               <Text style={styles.textGopay}>Rp 50.0000</Text>
             </View>
             <View style={styles.wrapperSecondSectionGopay}>
-              <View style={styles.iconSecGopayOne}>
-                <Image
-                  source={require('./src/assets/icons/pay.png')}
-                  style={styles.iconPictureGopay}
-                />
-                <Text style={styles.textSecGopay}>Pay</Text>
-              </View>
-              <View style={styles.iconSecGopayTwo}>
-                <Image
-                  source={require('./src/assets/icons/nearby.png')}
-                  style={styles.iconPictureGopay}
-                />
-                <Text style={styles.textSecGopay}>Nearby</Text>
-              </View>
-              <View style={styles.iconSecGopayThree}>
-                <Image
-                  source={require('./src/assets/icons/top-up.png')}
-                  style={styles.iconPictureGopay}
-                />
-                <Text style={styles.textSecGopay}>Top Up</Text>
-              </View>
-              <View style={styles.iconSecGopayFour}>
-                <Image
-                  source={require('./src/assets/icons/more.png')}
-                  style={styles.iconPictureGopay}
-                />
-                <Text style={styles.textSecGopay}>More</Text>
-              </View>
+              <GopayFeature
+                image={require('./src/assets/icons/pay.png')}
+                title="Pay"
+              />
+              <GopayFeature
+                image={require('./src/assets/icons/nearby.png')}
+                title="Nearby"
+              />
+              <GopayFeature
+                image={require('./src/assets/icons/top-up.png')}
+                title="Top Up"
+              />
+              <GopayFeature
+                image={require('./src/assets/icons/more.png')}
+                title="More"
+              />
             </View>
           </View>
           {/* MAIN FEATURE */}
@@ -313,35 +310,35 @@ const App = () => {
         <View style={styles.lineBottomFood} />
       </ScrollView>
       <View style={styles.bottomNav}>
-        <View style={styles.iconOne}>
+        <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/home-active.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Home</Text>
         </View>
-        <View style={styles.iconTwo}>
+        <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/order.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Orders</Text>
         </View>
-        <View style={styles.iconThree}>
+        <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/help.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Help</Text>
         </View>
-        <View style={styles.iconFour}>
+        <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/inbox.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Inbox</Text>
         </View>
-        <View style={styles.iconFive}>
+        <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/account.png')}
             style={styles.icons}
@@ -743,27 +740,7 @@ const styles = StyleSheet.create({
     color: '#545454',
     marginTop: 4,
   },
-  iconOne: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  iconTwo: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  iconThree: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  iconFour: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  iconFive: {
+  wrapperIcons: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
