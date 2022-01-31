@@ -198,7 +198,10 @@ const App = () => {
               <Text style={styles.textNearby}>Nearby Restaurant</Text>
               <Text style={styles.textDescAll}>See All</Text>
             </View>
-            <ScrollView horizontal style={styles.wrapperFoodSection}>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              style={styles.wrapperFoodSection}>
               <View>
                 <View style={styles.wrapperImageFood}>
                   <Image
