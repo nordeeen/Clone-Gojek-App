@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import GopayFeature from './src/components/molecules/GopayFeature';
+import MainFeature from './src/components/molecules/MainFeature';
 
 const App = () => {
   return (
@@ -64,82 +65,38 @@ const App = () => {
           </View>
           {/* MAIN FEATURE */}
           <View style={styles.wrapperMainFeature}>
-            <View style={styles.wrapperFirstMain}>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-ride.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>go-ride</Text>
-              </View>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-car.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>go-car</Text>
-              </View>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-bluebird.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>go-bluebird</Text>
-              </View>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-send.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>go-send</Text>
-              </View>
-            </View>
-            <View style={styles.wrapperSecondMain}>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-deal.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>go-deals</Text>
-              </View>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-pulsa.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>go-pulsa</Text>
-              </View>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-food.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>go-food</Text>
-              </View>
-              <View style={styles.wrapperBoxMainFeature}>
-                <View style={styles.boxMainFeature}>
-                  <Image
-                    source={require('./src/assets/icons/go-more.png')}
-                    style={styles.logoPicMain}
-                  />
-                </View>
-                <Text style={styles.fontBox}>more</Text>
-              </View>
-            </View>
+            <MainFeature
+              img={require('./src/assets/icons/go-ride.png')}
+              name="go-ride"
+            />
+            <MainFeature
+              img={require('./src/assets/icons/go-car.png')}
+              name="go-car"
+            />
+            <MainFeature
+              img={require('./src/assets/icons/go-bluebird.png')}
+              name="go-bluebird"
+            />
+            <MainFeature
+              img={require('./src/assets/icons/go-send.png')}
+              name="go-send"
+            />
+            <MainFeature
+              img={require('./src/assets/icons/go-deal.png')}
+              name="go-deals"
+            />
+            <MainFeature
+              img={require('./src/assets/icons/go-pulsa.png')}
+              name="go-pulsa"
+            />
+            <MainFeature
+              img={require('./src/assets/icons/go-food.png')}
+              name="go-food"
+            />
+            <MainFeature
+              img={require('./src/assets/icons/go-more.png')}
+              name="more"
+            />
           </View>
           <View style={styles.lines} />
           {/*NEWS SECTION */}
@@ -439,46 +396,10 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     marginTop: 18,
   },
-  logoPicMain: {
-    width: 46,
-    height: 46,
-  },
-  fontBox: {
-    fontSize: 11,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: 6,
-    textTransform: 'uppercase',
-  },
   lines: {
     height: 17,
     backgroundColor: '#F2F2F4',
     marginTop: 20,
-  },
-  wrapperFirstMain: {
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    width: '100%',
-    marginBottom: 18,
-  },
-  wrapperSecondMain: {
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    width: '100%',
-  },
-  wrapperBoxMainFeature: {
-    width: '25%',
-    alignItems: 'center',
-  },
-  boxMainFeature: {
-    width: 58,
-    height: 58,
-    borderWidth: 1,
-    borderRadius: 18,
-    borderColor: '#EFEFEF',
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   // NEWS SECTION
   wrapperFirstNewsSec: {
