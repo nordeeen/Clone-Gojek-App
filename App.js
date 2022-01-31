@@ -421,20 +421,6 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 4,
     borderBottomRightRadius: 4,
   },
-  iconPictureGopay: {
-    width: 36,
-    height: 36,
-  },
-  textSecGopay: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    marginTop: 15,
-    color: 'white',
-  },
-  iconSecGopayOne: {
-    flex: 1,
-    alignItems: 'center',
-  },
   iconSecGopayTwo: {
     flex: 1,
     alignItems: 'center',
