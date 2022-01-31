@@ -8,15 +8,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-
-const GopayFeature = props => {
-  return (
-    <View style={styles.iconSecGopayOne}>
-      <Image source={props.image} style={styles.iconPictureGopay} />
-      <Text style={styles.textSecGopay}>{props.title}</Text>
-    </View>
-  );
-};
+import GopayFeature from './src/components/molecules/GopayFeature';
 
 const App = () => {
   return (
