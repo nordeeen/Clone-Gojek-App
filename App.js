@@ -14,7 +14,7 @@ import MainFeature from './src/components/molecules/MainFeature';
 const App = () => {
   return (
     <View style={styles.container}>
-      <ScrollView automaticallyAdjustsScrollIndicatorInsets={false}>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.nav}>
           {/* SEARCH BAR */}
           <View style={styles.wrapperBar}>
