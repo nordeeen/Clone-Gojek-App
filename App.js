@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image, ScrollView} from 'react-native';
+import {Text, View, Image, ScrollView} from 'react-native';
 import GoBanner from './src/components/molecules/GoBanner';
 import GoInfo from './src/components/molecules/GoInfo';
 import GopayFeature from './src/components/molecules/GopayFeature';
