@@ -6,6 +6,7 @@ import GopayFeature from './src/components/molecules/GopayFeature';
 import MainFeature from './src/components/molecules/MainFeature';
 import NewsFeature from './src/components/molecules/NewsFeature';
 import SearchFeature from './src/components/molecules/SearchFeature';
+import ScrollableProducts from './src/container/organisms/ScrollableProducts';
 
 const App = () => {
   return (
@@ -85,6 +86,8 @@ const App = () => {
           {/*GOFOOD BANNER SECTION*/}
           <GoBanner />
           {/*NEARBY GO-FOOD */}
+          <ScrollableProducts />
+          {/* 
           <View>
             <View style={styles.wrapperLogoFood}>
               <Image
@@ -155,10 +158,11 @@ const App = () => {
                 <Text style={styles.textFoodSection}>Pecel Lele</Text>
               </View>
             </ScrollView>
-          </View>
+          </View> */}
         </View>
         <View style={styles.lineBottomFood} />
       </ScrollView>
+      {/*BOTTOM NAV */}
       <View style={styles.bottomNav}>
         <View style={styles.wrapperIcons}>
           <Image
