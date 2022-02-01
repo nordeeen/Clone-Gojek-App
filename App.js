@@ -4,12 +4,12 @@ import {
   Text,
   View,
   Image,
-  TextInput,
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
 import GopayFeature from './src/components/molecules/GopayFeature';
 import MainFeature from './src/components/molecules/MainFeature';
+import SearchFeature from './src/components/molecules/SearchFeature';
 
 const App = () => {
   return (
@@ -17,24 +17,7 @@ const App = () => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.nav}>
           {/* SEARCH BAR */}
-          <View style={styles.wrapperBar}>
-            <View style={styles.wrapperInputSearch}>
-              <TextInput
-                placeholder="What do you want to me"
-                style={styles.inputSearch}
-              />
-              <Image
-                source={require('./src/assets/icons/search.png')}
-                style={styles.iconSearch}
-              />
-            </View>
-            <View style={styles.wrapperIconPromo}>
-              <Image
-                source={require('./src/assets/icons/promo.png')}
-                style={styles.iconPromo}
-              />
-            </View>
-          </View>
+          <SearchFeature />
           {/* GOPAY */}
           <View style={styles.wrapperFirstSectionGopay}>
             <View style={styles.wrapperSectionGopay}>
