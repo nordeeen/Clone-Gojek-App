@@ -7,6 +7,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
+import GoInfo from './src/components/molecules/GoInfo';
 import GopayFeature from './src/components/molecules/GopayFeature';
 import MainFeature from './src/components/molecules/MainFeature';
 import NewsFeature from './src/components/molecules/NewsFeature';
@@ -86,35 +87,7 @@ const App = () => {
           {/*NEWS SECTION */}
           <NewsFeature />
           {/*INTERNAL INFORMATION SECTION*/}
-          <View style={styles.wrapperFirstInternalSec}>
-            <View style={styles.wrapperImageInternSec}>
-              <Image
-                source={require('./src/assets/logo/logos-gojek.png')}
-                style={styles.logoGojekInternalSec}
-              />
-            </View>
-            <Text style={styles.textInternSec}>Connect with Facebook</Text>
-            <View style={styles.wrapperFacebookIntern}>
-              <View>
-                <Image
-                  style={styles.imageFacebookIntern}
-                  source={require('./src/assets/dummy/facebook-connect.png')}
-                />
-              </View>
-              <View style={styles.wrapperText}>
-                <Text style={styles.firstText}>Connect with Facebook</Text>
-                <Text style={styles.secondText}>
-                  Log in faster without verification code
-                </Text>
-              </View>
-            </View>
-            <TouchableOpacity>
-              <View style={styles.btnNews}>
-                <Text style={styles.btnText}>connect</Text>
-              </View>
-            </TouchableOpacity>
-            <View style={styles.lineBottomIntern} />
-          </View>
+          <GoInfo />
           {/*GOFOOD BANNER SECTION*/}
           <View style={styles.wrapperGofoodSec}>
             <View style={styles.wrapperSection}>
