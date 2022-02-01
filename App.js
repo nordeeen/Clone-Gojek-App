@@ -10,21 +10,39 @@ import ScrollableProducts from './src/container/organisms/ScrollableProducts';
 
 const App = () => {
   return (
-    <View style={styles.container}>
+    <View style={{flex: 1}}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={styles.nav}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           {/* SEARCH BAR */}
           <SearchFeature />
           {/* GOPAY */}
-          <View style={styles.wrapperFirstSectionGopay}>
-            <View style={styles.wrapperSectionGopay}>
+          <View style={{marginHorizontal: 17, marginTop: 8}}>
+            <View
+              style={{
+                backgroundColor: '#2C5FB8',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                padding: 14,
+                borderTopLeftRadius: 4,
+                borderTopRightRadius: 4,
+              }}>
               <Image
                 source={require('./src/assets/icons/gopay.png')}
-                style={styles.iconGopay}
+                style={{width: 100, height: 26}}
               />
-              <Text style={styles.textGopay}>Rp 50.0000</Text>
+              <Text style={{color: 'white', fontSize: 17, fontWeight: 'bold'}}>
+                Rp 50.0000
+              </Text>
             </View>
-            <View style={styles.wrapperSecondSectionGopay}>
+            <View
+              style={{
+                backgroundColor: '#2F65BD',
+                paddingTop: 18,
+                paddingBottom: 14,
+                flexDirection: 'row',
+                borderBottomLeftRadius: 4,
+                borderBottomRightRadius: 4,
+              }}>
               <GopayFeature
                 image={require('./src/assets/icons/pay.png')}
                 title="Pay"
@@ -44,7 +62,7 @@ const App = () => {
             </View>
           </View>
           {/* MAIN FEATURE */}
-          <View style={styles.wrapperMainFeature}>
+          <View style={{flexDirection: 'row', flexWrap: 'wrap', marginTop: 18}}>
             <MainFeature
               img={require('./src/assets/icons/go-ride.png')}
               name="go-ride"
@@ -78,7 +96,9 @@ const App = () => {
               name="more"
             />
           </View>
-          <View style={styles.lines} />
+          <View
+            style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
+          />
           {/*NEWS SECTION */}
           <NewsFeature />
           {/*INTERNAL INFORMATION SECTION*/}
@@ -162,7 +182,7 @@ const App = () => {
         </View>
       </ScrollView>
       {/*BOTTOM NAV */}
-      <View style={styles.bottomNav}>
+      <View style={{height: 54, flexDirection: 'row'}}>
         {/* */}
         <View style={styles.wrapperIcons}>
           <Image
