@@ -296,44 +296,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   // STYLE SEARCH BAR
-  wrapperBar: {
-    paddingTop: 15,
-    marginHorizontal: 17,
-    flexDirection: 'row',
-  },
-  iconSearch: {
-    width: 27,
-    height: 27,
-    position: 'absolute',
-    top: 7,
-    left: 12,
-    backgroundColor: 'white',
-  },
-  wrapperInputSearch: {
-    position: 'relative',
-    flex: 1,
-  },
-  inputSearch: {
-    borderWidth: 1,
-    borderColor: '#E8E8E8',
-    borderRadius: 25,
-    height: 40,
-    fontSize: 13,
-    paddingLeft: 55,
-    paddingRight: 20,
-    backgroundColor: 'white',
-    marginRight: 15,
-  },
-  // STYLE PROMO SECTION
-  wrapperIconPromo: {
-    width: 35,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  iconPromo: {
-    width: 42,
-    height: 34,
-  },
   // STYLE GOPAY SECTION
   wrapperFirstSectionGopay: {
     marginHorizontal: 17,
