@@ -7,6 +7,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
+import GoBanner from './src/components/molecules/GoBanner';
 import GoInfo from './src/components/molecules/GoInfo';
 import GopayFeature from './src/components/molecules/GopayFeature';
 import MainFeature from './src/components/molecules/MainFeature';
@@ -89,37 +90,7 @@ const App = () => {
           {/*INTERNAL INFORMATION SECTION*/}
           <GoInfo />
           {/*GOFOOD BANNER SECTION*/}
-          <View style={styles.wrapperGofoodSec}>
-            <View style={styles.wrapperSection}>
-              <Image
-                source={require('./src/assets/dummy/banner-food.jpg')}
-                style={styles.ImageNewsSec}
-              />
-              <View style={styles.bgTransparent} />
-              <Image
-                source={require('./src/assets/logo/logo-gofood.png')}
-                style={styles.logoGojek}
-              />
-              <View style={styles.wrapperDesc}>
-                <View>
-                  <Text style={styles.textBannerFood}>
-                    Free GO-FOOD voucher
-                  </Text>
-                  <Text style={styles.textDescFood}>
-                    Quick, before they run out!
-                  </Text>
-                </View>
-                <View style={styles.wrapperBtnVoucher}>
-                  <TouchableOpacity>
-                    <View style={styles.btnVoucher}>
-                      <Text style={styles.btnVoucherText}>get voucher</Text>
-                    </View>
-                  </TouchableOpacity>
-                </View>
-              </View>
-            </View>
-            <View style={styles.linesBottom} />
-          </View>
+          <GoBanner />
           {/*NEARBY GO-FOOD */}
           <View>
             <View style={styles.wrapperLogoFood}>
