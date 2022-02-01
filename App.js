@@ -4,6 +4,7 @@ import GoBanner from './src/components/molecules/GoBanner';
 import GoInfo from './src/components/molecules/GoInfo';
 import GopayFeature from './src/components/molecules/GopayFeature';
 import MainFeature from './src/components/molecules/MainFeature';
+import NavBarIcon from './src/components/molecules/NavBarIcon';
 import NewsFeature from './src/components/molecules/NewsFeature';
 import SearchFeature from './src/components/molecules/SearchFeature';
 import ScrollableProducts from './src/container/organisms/ScrollableProducts';
@@ -183,42 +184,64 @@ const App = () => {
       </ScrollView>
       {/*BOTTOM NAV */}
       <View style={{height: 54, flexDirection: 'row'}}>
-        {/* */}
+        <NavBarIcon
+          title="Home"
+          img={require('./src/assets/icons/home-active.png')}
+          active
+        />
+        <NavBarIcon
+          title="Order"
+          img={require('./src/assets/icons/order.png')}
+        />
+        <NavBarIcon title="Help" img={require('./src/assets/icons/help.png')} />
+        <NavBarIcon
+          title="Inbox"
+          img={require('./src/assets/icons/inbox.png')}
+        />
+        <NavBarIcon
+          title="Account"
+          img={require('./src/assets/icons/account.png')}
+        />
+        {/* 
         <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/home-active.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Home</Text>
-        </View>
+        </View> */}
+        {/* 
         <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/order.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Orders</Text>
-        </View>
+        </View> */}
+        {/* 
         <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/help.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Help</Text>
-        </View>
+        </View> */}
+        {/* 
         <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/inbox.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Inbox</Text>
-        </View>
+        </View> */}
+        {/* 
         <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/account.png')}
             style={styles.icons}
           />
           <Text style={styles.font}>Account</Text>
-        </View>
+        </View> */}
       </View>
     </View>
   );
