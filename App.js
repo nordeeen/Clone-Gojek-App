@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import GopayFeature from './src/components/molecules/GopayFeature';
 import MainFeature from './src/components/molecules/MainFeature';
+import NewsFeature from './src/components/molecules/NewsFeature';
 import SearchFeature from './src/components/molecules/SearchFeature';
 
 const App = () => {
@@ -83,30 +84,7 @@ const App = () => {
           </View>
           <View style={styles.lines} />
           {/*NEWS SECTION */}
-          <View style={styles.wrapperFirstNewsSec}>
-            <View style={styles.wrapperImageNews}>
-              <Image
-                source={require('./src/assets/dummy/go-news-football.jpg')}
-                style={styles.ImageNewsSec}
-              />
-              <View style={styles.bgTransparent} />
-              <Image
-                source={require('./src/assets/logo/logo-gojek-transparent.png')}
-                style={styles.logoGojek}
-              />
-            </View>
-            <View style={styles.wrapperTextNews}>
-              <Text style={styles.textNewsSec}>go-news</Text>
-              <Text style={styles.textDescNews}>
-                Gelandang Timnas Indonesia di era Shin Tae Yong
-              </Text>
-              <TouchableOpacity>
-                <View style={styles.btnNews}>
-                  <Text style={styles.btnText}>read</Text>
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
+          <NewsFeature />
           {/*INTERNAL INFORMATION SECTION*/}
           <View style={styles.wrapperFirstInternalSec}>
             <View style={styles.wrapperImageInternSec}>
