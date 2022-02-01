@@ -160,10 +160,10 @@ const App = () => {
             </ScrollView>
           </View> */}
         </View>
-        <View style={styles.lineBottomFood} />
       </ScrollView>
       {/*BOTTOM NAV */}
       <View style={styles.bottomNav}>
+        {/* */}
         <View style={styles.wrapperIcons}>
           <Image
             source={require('./src/assets/icons/home-active.png')}
