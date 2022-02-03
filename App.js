@@ -1,10 +1,7 @@
 import React from 'react';
-import {Text, View, Image, ScrollView} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import GoBanner from './src/components/molecules/GoBanner';
 import GoInfo from './src/components/molecules/GoInfo';
-import GopayFeature from './src/components/molecules/GopayFeature';
-import MainFeature from './src/components/molecules/MainFeature';
-import NavBarIcon from './src/components/molecules/NavBarIcon';
 import NewsFeature from './src/components/molecules/NewsFeature';
 import SearchFeature from './src/components/molecules/SearchFeature';
 import HomeGopayFeature from './src/container/organisms/HomeGopayFeature';
