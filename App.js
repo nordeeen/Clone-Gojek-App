@@ -7,6 +7,7 @@ import MainFeature from './src/components/molecules/MainFeature';
 import NavBarIcon from './src/components/molecules/NavBarIcon';
 import NewsFeature from './src/components/molecules/NewsFeature';
 import SearchFeature from './src/components/molecules/SearchFeature';
+import HomeMainFeature from './src/container/organisms/HomeMainFeature';
 import NavBar from './src/container/organisms/NavBar';
 import ScrollableProducts from './src/container/organisms/ScrollableProducts';
 
@@ -64,40 +65,7 @@ const App = () => {
             </View>
           </View>
           {/* MAIN FEATURE */}
-          <View style={{flexDirection: 'row', flexWrap: 'wrap', marginTop: 18}}>
-            <MainFeature
-              img={require('./src/assets/icons/go-ride.png')}
-              name="go-ride"
-            />
-            <MainFeature
-              img={require('./src/assets/icons/go-car.png')}
-              name="go-car"
-            />
-            <MainFeature
-              img={require('./src/assets/icons/go-bluebird.png')}
-              name="go-bluebird"
-            />
-            <MainFeature
-              img={require('./src/assets/icons/go-send.png')}
-              name="go-send"
-            />
-            <MainFeature
-              img={require('./src/assets/icons/go-deal.png')}
-              name="go-deals"
-            />
-            <MainFeature
-              img={require('./src/assets/icons/go-pulsa.png')}
-              name="go-pulsa"
-            />
-            <MainFeature
-              img={require('./src/assets/icons/go-food.png')}
-              name="go-food"
-            />
-            <MainFeature
-              img={require('./src/assets/icons/go-more.png')}
-              name="more"
-            />
-          </View>
+          <HomeMainFeature/>
           <View
             style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
           />
