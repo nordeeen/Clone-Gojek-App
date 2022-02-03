@@ -7,6 +7,7 @@ import MainFeature from './src/components/molecules/MainFeature';
 import NavBarIcon from './src/components/molecules/NavBarIcon';
 import NewsFeature from './src/components/molecules/NewsFeature';
 import SearchFeature from './src/components/molecules/SearchFeature';
+import NavBar from './src/container/organisms/NavBar';
 import ScrollableProducts from './src/container/organisms/ScrollableProducts';
 
 const App = () => {
@@ -111,26 +112,7 @@ const App = () => {
         </View>
       </ScrollView>
       {/*BOTTOM NAV */}
-      <View style={{height: 54, flexDirection: 'row'}}>
-        <NavBarIcon
-          title="Home"
-          img={require('./src/assets/icons/home-active.png')}
-          active
-        />
-        <NavBarIcon
-          title="Order"
-          img={require('./src/assets/icons/order.png')}
-        />
-        <NavBarIcon title="Help" img={require('./src/assets/icons/help.png')} />
-        <NavBarIcon
-          title="Inbox"
-          img={require('./src/assets/icons/inbox.png')}
-        />
-        <NavBarIcon
-          title="Account"
-          img={require('./src/assets/icons/account.png')}
-        />
-      </View>
+      <NavBar />
     </View>
   );
 };
