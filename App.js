@@ -14,7 +14,6 @@ const App = () => {
     <View style={{flex: 1}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{flex: 1, backgroundColor: 'white'}}>
-          {/* SEARCH BAR */}
           <SearchFeature />
           {/* GOPAY */}
           <HomeGopayFeature />
