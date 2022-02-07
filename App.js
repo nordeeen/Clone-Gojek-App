@@ -15,7 +15,6 @@ const App = () => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{flex: 1, backgroundColor: 'white'}}>
           <SearchFeature />
-          {/* GOPAY */}
           <HomeGopayFeature />
           {/* MAIN FEATURE */}
           <HomeMainFeature />
