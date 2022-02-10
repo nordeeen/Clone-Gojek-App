@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, ScrollView} from 'react-native';
+import {View, ScrollView, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -14,37 +14,22 @@ import ScrollableProducts from './src/container/organisms/ScrollableProducts';
 
 const App = () => {
   return (
-    <View style={{flex: 1}}>
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={{flex: 1, backgroundColor: 'white'}}>
-          <SearchFeature />
-          <HomeGopayFeature />
-          {/* MAIN FEATURE */}
-          <HomeMainFeature />
-          <View
-            style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
-          />
-          {/*NEWS SECTION */}
-          <NewsFeature />
-          {/*INTERNAL INFORMATION SECTION*/}
-          <GoInfo />
-          {/*GOFOOD BANNER SECTION*/}
-          <GoBanner />
-          {/*NEARBY GO-FOOD */}
-          <ScrollableProducts />
-        </View>
-      </ScrollView>
-      {/*BOTTOM NAV */}
-      <NavBar />
-    </View>
   );
 };
+
+function HomeScreen() {
+  return (
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Home Screen</Text>
+    </View>
+  );
+}
 
 // export default App;
 
 const Stack = createNativeStackNavigator();
 
-function AppNavigator() {
+function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -54,4 +39,4 @@ function AppNavigator() {
   );
 }
 
-export default AppNavigator;
+export default App;
