@@ -1,3 +1,4 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React, {Component} from 'react';
 import {View, ScrollView} from 'react-native';
 import GoBanner from '../../../components/molecules/GoBanner';
@@ -10,7 +11,6 @@ import NavBar from '../../../container/organisms/NavBar';
 import ScrollableProducts from '../../../container/organisms/ScrollableProducts';
 
 class Home extends Component {
-  state = {};
   render() {
     return (
       <View style={{flex: 1}}>
@@ -24,7 +24,9 @@ class Home extends Component {
               style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
             />
             {/*NEWS SECTION */}
-            <NewsFeature />
+            <NewsFeature
+              onPress={this.props.navigation.navigate('NewsDetail')}
+            />
             {/*INTERNAL INFORMATION SECTION*/}
             <GoInfo />
             {/*GOFOOD BANNER SECTION*/}
