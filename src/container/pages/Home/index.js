@@ -1,4 +1,3 @@
-import {NavigationContainer} from '@react-navigation/native';
 import React, {Component} from 'react';
 import {View, ScrollView} from 'react-native';
 import GoBanner from '../../../components/molecules/GoBanner';

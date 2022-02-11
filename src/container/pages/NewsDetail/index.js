@@ -3,7 +3,7 @@ import {View, Text} from 'react-native';
 
 const NewsDetail = () => {
   return (
-    <View>
+    <View style={{alignItems: 'center', justifyContent: 'center'}}>
       <Text>News Detail Page</Text>
     </View>
   );
