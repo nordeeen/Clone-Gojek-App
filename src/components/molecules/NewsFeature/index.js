@@ -59,26 +59,25 @@ const NewsFeature = onPress => {
           }}>
           Gelandang Timnas Indonesia di era Shin Tae Yong
         </Text>
-        <TouchableOpacity onPress={onPress}>
-          <View
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#61A756',
+            alignSelf: 'flex-end',
+            paddingHorizontal: 12,
+            paddingVertical: 11,
+            borderRadius: 4,
+          }}
+          onPress={onPress}>
+          <Text
             style={{
-              backgroundColor: '#61A756',
-              alignSelf: 'flex-end',
-              paddingHorizontal: 12,
-              paddingVertical: 11,
-              borderRadius: 4,
+              fontSize: 13,
+              textTransform: 'uppercase',
+              color: 'white',
+              textAlign: 'center',
+              fontWeight: 'bold',
             }}>
-            <Text
-              style={{
-                fontSize: 13,
-                textTransform: 'uppercase',
-                color: 'white',
-                textAlign: 'center',
-                fontWeight: 'bold',
-              }}>
-              read
-            </Text>
-          </View>
+            read
+          </Text>
         </TouchableOpacity>
       </View>
     </View>
