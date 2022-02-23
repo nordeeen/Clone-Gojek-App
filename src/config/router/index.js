@@ -5,6 +5,21 @@ import {Home, NewsDetail} from '../../container/pages';
 
 const Stack = createNativeStackNavigator();
 
+const HomeStack = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName={Home}
+        screenOptions={{
+          headerShown: false,
+        }}>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="NewsDetail" component={NewsDetail} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
 const Route = () => {
   return (
     <NavigationContainer>
