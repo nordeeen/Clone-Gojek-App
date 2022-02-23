@@ -1,7 +1,7 @@
 import {Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const NewsFeature = onPress => {
+const NewsFeature = () => {
   return (
     <View style={{paddingTop: 16, paddingHorizontal: 16}}>
       <View style={{position: 'relative'}}>
@@ -59,7 +59,7 @@ const NewsFeature = onPress => {
           }}>
           Gelandang Timnas Indonesia di era Shin Tae Yong
         </Text>
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity>
           <View
             style={{
               backgroundColor: '#61A756',

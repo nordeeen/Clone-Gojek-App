@@ -23,9 +23,7 @@ class Home extends Component {
               style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
             />
             {/*NEWS SECTION */}
-            <NewsFeature
-              onPress={this.props.navigation.navigate('NewsDetail')}
-            />
+            <NewsFeature/>
             {/*INTERNAL INFORMATION SECTION*/}
             <GoInfo />
             {/*GOFOOD BANNER SECTION*/}
