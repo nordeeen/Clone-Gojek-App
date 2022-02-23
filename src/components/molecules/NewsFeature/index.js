@@ -1,7 +1,7 @@
 import {Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const NewsFeature = onPress => {
+const NewsFeature = ({onPress}) => {
   return (
     <View style={{paddingTop: 16, paddingHorizontal: 16}}>
       <View style={{position: 'relative'}}>
