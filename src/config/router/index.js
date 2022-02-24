@@ -24,13 +24,14 @@ const OrdersStack = createStackNavigator(
   },
   {
     headerMode: 'none',
-    initialRouteName: 'Home',
+    initialRouteName: 'Orders',
   },
 );
 
 const Router = createSwitchNavigator(
   {
     HomeStack,
+    OrdersStack,
   },
   {
     headerMode: 'none',
