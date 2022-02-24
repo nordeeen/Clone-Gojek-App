@@ -35,7 +35,7 @@ const Router = createSwitchNavigator(
   },
   {
     headerMode: 'none',
-    initialRouteName: 'Home',
+    initialRouteName: 'HomeStack',
   },
 );
 
