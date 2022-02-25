@@ -9,36 +9,32 @@ import HomeMainFeature from '../../../container/organisms/HomeMainFeature';
 import NavBar from '../../../container/organisms/NavBar';
 import ScrollableProducts from '../../../container/organisms/ScrollableProducts';
 
-class Home extends Component {
-  render() {
-    return (
-      <View style={{flex: 1}}>
-        <ScrollView showsVerticalScrollIndicator={false}>
-          <View style={{flex: 1, backgroundColor: 'white'}}>
-            <SearchFeature />
-            <HomeGopayFeature />
-            {/* MAIN FEATURE */}
-            <HomeMainFeature />
-            <View
-              style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
-            />
-            {/*NEWS SECTION */}
-            <NewsFeature
-              onPress={() => this.props.navigation.navigate('NewsDetail')}
-            />
-            {/*INTERNAL INFORMATION SECTION*/}
-            <GoInfo />
-            {/*GOFOOD BANNER SECTION*/}
-            <GoBanner />
-            {/*NEARBY GO-FOOD */}
-            <ScrollableProducts />
-          </View>
-        </ScrollView>
-        {/*BOTTOM NAV */}
-        <NavBar />
-      </View>
-    );
-  }
-}
+const Home = ({navigation}) => {
+  return (
+    <View style={{flex: 1}}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
+          <SearchFeature />
+          <HomeGopayFeature />
+          {/* MAIN FEATURE */}
+          <HomeMainFeature />
+          <View
+            style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
+          />
+          {/*NEWS SECTION */}
+          <NewsFeature onPress={() => navigation.navigate('NewsDetail')} />
+          {/*INTERNAL INFORMATION SECTION*/}
+          <GoInfo />
+          {/*GOFOOD BANNER SECTION*/}
+          <GoBanner />
+          {/*NEARBY GO-FOOD */}
+          <ScrollableProducts />
+        </View>
+      </ScrollView>
+      {/*BOTTOM NAV */}
+      <NavBar />
+    </View>
+  );
+};
 
 export default Home;
