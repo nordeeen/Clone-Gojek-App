@@ -1,11 +1,14 @@
 import React from 'react';
-import {Text, View, Button} from 'react-native';
+import {View, Button} from 'react-native';
 
-const Orders = () => {
+const Orders = ({navigation}) => {
   return (
     <View>
-      <Text>Orders Page</Text>;
-      <Button title="Go to Detail" onPress={() => alert('test')} />
+      {/* <Text>Orders Page</Text>; */}
+      <Button
+        title="Go to Detail"
+        onPress={() => navigation.navigate('OrderDetail')}
+      />
     </View>
   );
 };
