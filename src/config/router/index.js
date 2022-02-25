@@ -5,6 +5,32 @@ import {Home, NewsDetail} from '../../container/pages';
 
 const Stack = createNativeStackNavigator();
 
+const HomeStack = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="NewsDetail" component={NewsDetail} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+const OrderStack = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="NewsDetail" component={NewsDetail} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
 const Router = () => {
   return (
     <NavigationContainer>
