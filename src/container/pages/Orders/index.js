@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Button} from 'react-native';
+import {Text, View, Button} from 'react-native';
 
 const Orders = ({navigation}) => {
   return (
     <View>
-      {/* <Text>Orders Page</Text>; */}
+      {undefined !== 0 && <Text>Orders Page</Text>}
       <Button
         title="Go to Detail"
         onPress={() => navigation.navigate('OrderDetail')}
