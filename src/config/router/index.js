@@ -1,7 +1,6 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
 import {Home, NewsDetail, OrderDetail, Orders} from '../../container/pages';
 
 const Stack = createNativeStackNavigator();
@@ -33,7 +32,7 @@ const Router = () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{headerShown: false}}
-        initialRouteName="OrderStack">
+        initialRouteName="HomeStack">
         <Stack.Screen name="HomeStack" component={HomeStack} />
         <Stack.Screen name="OrderStack" component={OrderStack} />
       </Stack.Navigator>
