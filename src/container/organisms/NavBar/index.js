@@ -13,22 +13,19 @@ class NavBar extends Component {
           active
         />
         <NavBarIcon
-          onPress={() => this.props.navigation.navigate('Orders')}
+          onPress={() => navigation.navigate('Orders')}
           title="Order"
           img={require('../../../assets/icons/order.png')}
         />
         <NavBarIcon
-          onPress={() => navigation.navigate('')}
           title="Help"
           img={require('../../../assets/icons/help.png')}
         />
         <NavBarIcon
-          onPress={() => navigation.navigate('')}
           title="Inbox"
           img={require('../../../assets/icons/inbox.png')}
         />
         <NavBarIcon
-          onPress={() => navigation.navigate('')}
           title="Account"
           img={require('../../../assets/icons/account.png')}
         />
