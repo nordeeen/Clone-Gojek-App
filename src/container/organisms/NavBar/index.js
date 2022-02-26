@@ -3,11 +3,6 @@ import {View} from 'react-native';
 import NavBarIcon from '../../../components/molecules/NavBarIcon';
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     return (
       <View style={{height: 54, flexDirection: 'row'}}>
