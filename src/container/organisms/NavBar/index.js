@@ -1,11 +1,8 @@
 import React from 'react';
 import {View} from 'react-native';
 import NavBarIcon from '../../../components/molecules/NavBarIcon';
-import {useNavigation} from '@react-navigation/native';
 
 const NavBar = () => {
-  const navigation = useNavigation();
-
   return (
     <View style={{height: 54, flexDirection: 'row'}}>
       <NavBarIcon
