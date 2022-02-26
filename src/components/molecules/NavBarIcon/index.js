@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-// import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const NavBarIcon = props => {
   return (
