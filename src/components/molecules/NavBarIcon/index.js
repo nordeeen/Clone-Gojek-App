@@ -5,7 +5,7 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 const NavBarIcon = props => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={props.onPress}>
         <Image source={props.img} style={{height: 26, width: 26}} />
         <Text
           style={{
